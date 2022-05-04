@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
+    integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
+    crossorigin='anonymous' />
+  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
 <body>
+
+  <div id="app" class="container">
+    <h1 class="title">ToDo List</h1>
+
+    <div class="new-todo">
+      <input type="text" placeholder="ToDo">
+      <button>Aggiungi</button>
+    </div>
+
+    <div class="todos-container">
+      <ul>
+        <li>
+          toDo
+          <i class="fa-solid fa-xmark"></i>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
   <script src="script.js"></script>
 </body>
+
 </html>
