@@ -18,12 +18,13 @@
     <h1 class="title">ToDo List</h1>
 
     <div class="new-todo">
-      <input type="text" placeholder="ToDo">
-      <button>Aggiungi</button>
+      <input v-model="newTodo.text" type="text" placeholder="ToDo">
+      <button @click="addNewToDo()">Aggiungi</button>
     </div>
 
     <div class="todos-container">
       <ul>
+
         <li v-for="todo in todos">
           {{todo}}
           <i class="fa-solid fa-xmark"></i>
