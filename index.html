@@ -18,7 +18,10 @@
     <h1 class="title">ToDo List</h1>
 
     <div class="new-todo">
-      <input v-model.trim="newTodo.text" type="text" placeholder="ToDo">
+      <input v-model.trim="newTodo.text"
+      @keyup.enter="addNewToDo"
+       type="text"
+       placeholder="ToDo">
       <button @click="addNewToDo()">Aggiungi</button>
     </div>
 
@@ -27,7 +30,10 @@
       <ul>
         <li v-for="(todo,index) in todos">
           {{todo.text}}
-          <i class="fa-solid fa-xmark"></i>
+          <i 
+          class="fa-solid fa-xmark"
+          @click="remove(index)"
+          ></i>
         </li>
       </ul>
 

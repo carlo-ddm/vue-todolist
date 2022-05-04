@@ -49,9 +49,13 @@ const app = new Vue ({
         this.newTodo = {
           text: '',
           done: false,
-        }
-       ;
+        };
       }
+    },
+
+    remove (index){
+      console.log(index);
+      this.todos.splice(index,1)
     }
   },
 
