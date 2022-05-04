@@ -66,5 +66,9 @@
   color: black;
 }
 
+.line-text {
+  text-decoration: line-through;
+}
+
 
 
