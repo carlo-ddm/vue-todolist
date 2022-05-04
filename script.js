@@ -22,18 +22,18 @@ const app = new Vue ({
   data: {
     classe: '',
     todos: [
-      {
-        text: 'Ciao',
-        done: false,
-      },
-      {
-        text: 'Ciao2',
-        done: false,
-      },
-      {
-        text: 'Ciao3',
-        done: false,
-      }
+      // {
+      //   text: 'Ciao',
+      //   done: false,
+      // },
+      // {
+      //   text: 'Ciao2',
+      //   done: false,
+      // },
+      // {
+      //   text: 'Ciao3',
+      //   done: false,
+      // }
     ],
     
     newTodo: {
