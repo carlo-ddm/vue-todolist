@@ -18,21 +18,42 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 
 const app = new Vue ({
   el: '#app',
+
   data: {
-    todos: ['ciao1','ciao2','ciao3'],
-    newTodo: [
+    classe: '',
+    todos: [
       {
-        text: '',
+        text: 'Ciao',
+        done: false,
+      },
+      {
+        text: 'Ciao2',
+        done: false,
+      },
+      {
+        text: 'Ciao3',
         done: false,
       }
     ],
+    
+    newTodo: {
+        text: '',
+        done: false,
+      }
+
   },
   methods: {
     addNewToDo () {
       if (this.newTodo.text.length >= 3){
-        this.todos.push(this.newTodo.text);
-        this.newTodo = '';
+        this.todos.push(this.newTodo);
+        this.newTodo = {
+          text: '',
+          done: false,
+        }
+       ;
       }
     }
   },
+
+
 })
